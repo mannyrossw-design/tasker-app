@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Tareas y Marketing IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#1D1D1F', // Apple dark gray background
+                        'brand-surface': '#2C2C2E', // Lighter gray for cards
+                        'brand-primary': '#0A84FF', // Apple vibrant blue
+                        'brand-secondary': '#BF5AF2', // Apple vibrant purple
+                        'brand-text-primary': '#F5F5F7', // Off-white for primary text
+                        'brand-text-secondary': '#8E8E93', // Muted gray for secondary text
+                        'brand-border': '#424245', // Subtle border color
+                        'brand-success': '#32D74B', // Apple green
+                        'brand-danger': '#FF453A', // Apple red
+                        'brand-warning': '#FFD60A', // Apple yellow
+                    },
+                },
+            },
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-brand-bg text-brand-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
